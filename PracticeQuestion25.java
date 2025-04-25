@@ -18,9 +18,9 @@ public class PracticeQuestion25
         
     }
     
-    public void fever(ArrayList<double> temperatures) {
+    public void fever(ArrayList<Double> temperatures) {
         // Question 25
-        int count;
+        int count = 0;
         double max = 0.0;
         for(double temp : temperatures) {
             if(temp > 37.5) { count++; }
@@ -34,7 +34,7 @@ public class PracticeQuestion25
         
         // Question 27
         Collections.sort(temperatures);
-        System.out.println(temperatures.last());
+        System.out.println(temperatures.getLast());
         
     }
 }
